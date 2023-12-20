@@ -6,7 +6,7 @@
  */
 :root {
   --blue: #007bff;
-  --bluestrong: #011739;
+  --bluestrong: #01022b;
   --dourado: #C8A45B;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -6634,6 +6634,7 @@ button.bg-dark:focus {
 
 .mb-4,
 .my-4 {
+  
   margin-bottom: 1.5rem !important; }
 
 .ml-4,
@@ -8399,12 +8400,13 @@ h1, h2, h3, h4, h5,
       opacity: .5; }
     .hero-wrap.hero-wrap-2 .slider-text {
       height: 400px !important; }
-
+      
+/* tamanho do excelencia em direito */
 .slider-text {
-  height: 600px;
+  height: 300px;
   position: relative; }
   .slider-text h1 {
-    font-size: 60px;
+    font-size: 50px;
     color: #fff;
     line-height: 1.1;
     font-weight: 500; }
