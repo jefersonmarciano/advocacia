@@ -12,7 +12,7 @@
   });
 
 
-	var fullHeight = function() {
+	let fullHeight = function() {
 
 		$('.js-fullheight').css('height', $(window).height());
 		$(window).resize(function(){
@@ -23,7 +23,7 @@
 	fullHeight();
 
 	// loader
-	var loader = function() {
+	let loader = function() {
 		setTimeout(function() { 
 			if($('#ftco-loader').length > 0) {
 				$('#ftco-loader').removeClass('show');
@@ -32,7 +32,7 @@
 	};
 	loader();
 
-	var carousel = function() {
+	let carousel = function() {
 		$('.carousel-testimony').owlCarousel({
 			center: true,
 			loop: true,
@@ -60,7 +60,7 @@
 	carousel();
 
 	$('nav .dropdown').hover(function(){
-		var $this = $(this);
+		let $this = $(this);
 		// 	 timer;
 		// clearTimeout(timer);
 		$this.addClass('show');
@@ -68,7 +68,7 @@
 		// $this.find('.dropdown-menu').addClass('animated-fast fadeInUp show');
 		$this.find('.dropdown-menu').addClass('show');
 	}, function(){
-		var $this = $(this);
+		let $this = $(this);
 			// timer;
 		// timer = setTimeout(function(){
 			$this.removeClass('show');
@@ -84,9 +84,9 @@
 	});
 
 	// scroll
-	var scrollWindow = function() {
+	let scrollWindow = function() {
 		$(window).scroll(function(){
-			var $w = $(this),
+			let $w = $(this),
 					st = $w.scrollTop(),
 					navbar = $('.ftco_navbar'),
 					sd = $('.js-scroll-wrap');
@@ -123,15 +123,15 @@
 	};
 	scrollWindow();
 
-	var counter = function() {
+	let counter = function() {
 		
 		$('#section-counter, .hero-wrap, .ftco-counter').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
 
-				var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
+				let comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
 				$('.number').each(function(){
-					var $this = $(this),
+					let $this = $(this),
 						num = $this.data('number');
 						console.log(num);
 					$this.animateNumber(
@@ -150,8 +150,8 @@
 	counter();
 
 
-	var contentWayPoint = function() {
-		var i = 0;
+	let contentWayPoint = function() {
+		let i = 0;
 		$('.ftco-animate').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
@@ -162,9 +162,9 @@
 				setTimeout(function(){
 
 					$('body .ftco-animate.item-animate').each(function(k){
-						var el = $(this);
+						let el = $(this);
 						setTimeout( function () {
-							var effect = el.data('animate-effect');
+							let effect = el.data('animate-effect');
 							if ( effect === 'fadeIn') {
 								el.addClass('fadeIn ftco-animated');
 							} else if ( effect === 'fadeInLeft') {
